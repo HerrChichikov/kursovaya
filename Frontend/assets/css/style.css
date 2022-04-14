@@ -17,6 +17,63 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .intro{
+    display: flex;
+    flex-direction: column;
     width:100%;
     height: 100vh;
+    background: url("../images/интро.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.intro__inner{
+    padding-top: 25%;
+    width: 100%;
+    max-width: 880px;
+}
+
+.intro__title{
+    font-size: 50px;
+    font-weight: 700;
+ }
+
+.header{
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: #fff;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.header__logo{
+    font-size: 30px;
+    font-weight: 700;
+    color:#253d4e;
+}
+
+.nav{
+    font-size: 16px;
+}
+
+.nav__link{
+    display: inline-block;
+    vertical-align: top;
+    margin:0 10px;
+    color: #253d4e;
+    text-decoration: none;
+    transition: color .2s linear;
+
+}
+
+.nav__link:hover{
+    color:black;
 }
