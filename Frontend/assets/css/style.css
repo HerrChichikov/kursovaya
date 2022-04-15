@@ -110,3 +110,20 @@ h1,h2,h3,h4,h5,h6{
 .section__header{
     margin-bottom: 40px;
 }
+
+.about{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__image{
+    transition: transform .2s linear;
+}
+.about__item:hover .about__image{
+    transform: translate3d(-10px,-10px,0);
+
+}
+
+.about__item:hover .about__image img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
